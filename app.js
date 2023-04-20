@@ -47,7 +47,8 @@ async function updateDomList() {
     li.textContent = hobbit;
     ul.appendChild(li);
   });
-} catch (error) {console.error(err);
+} catch (err) {
+  console.error(err);
   feedbackP.textContent = err.message;
 }
 }
